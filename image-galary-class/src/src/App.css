@@ -1,0 +1,34 @@
+
+.App{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+.maindiv{
+  border-radius: 5px;
+  padding: 3%;
+  margin: 1%;
+  width: 200px;
+  text-align: justify;
+  text-justify: inter-word;
+  box-shadow: 20px 30px 40px #000;
+}
+.heading{
+  font-size:1.5vw
+}
+
+@media screen and (max-width:"635px") {
+  .maindiv{
+    border-radius: 5px;
+    padding: 3%;
+    margin: 1%;
+    width: 200px;
+    height: 35vw;
+    box-shadow: 20px 30px 40px #000;
+  }
+}
+*{
+  box-sizing: border-box;
+}

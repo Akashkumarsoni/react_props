@@ -1,0 +1,47 @@
+body{
+  background-color: black;
+  color: white;
+}
+.App{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+.maindiv{
+  /* border-radius: 7px; */
+  margin: 1%;
+  width: 200px;
+  text-align: justify;
+  text-justify: inter-word;
+  box-shadow: 20px 30px 40px #000;
+  border: 2px solid salmon;
+  
+}
+.maindiv img{
+  width: 100%;
+  /* border-top-left-radius: 5px;
+  border-top-right-radius: 5px; */
+  border-bottom: 2px solid salmon;
+
+}
+.heading{
+  font-size:15px;
+  padding-left: 5%;
+}
+
+@media screen and (max-width:"635px") {
+  .maindiv{
+    /* border-radius: 5px; */
+    margin: 1%;
+    width: 200px;
+    box-shadow: 40px 40px 60px #000;
+    border: 2px solid salmon;
+    
+  }
+  
+}
+*{
+  box-sizing: border-box;
+}
