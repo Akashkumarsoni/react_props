@@ -1,24 +1,34 @@
-import React from 'react'
 import './App.css';
-export const Galary = (props) => {
+
+import React, { Component } from 'react'
+
+export class Galary extends Component {
+  render() {
+   
+      return (
+        <div className='App'>{
+            this.props.finalarray.map((item) => <Images nameofimage={item.nameofimage}
+            images = {item.images} 
+            
+            />)
+            }</div>
+      )
     
-  return (
-    <div className='App'>{
-        props.finalarray.map((item) => <Images nameofimage={item.nameofimage}
-        images = {item.images} 
-        
-        />)
-        }</div>
-  )
+  }
 }
 
 
 
-export const Images = (props) => {
+
+
+export class Images extends Component {
+  render() {
     return (
       <div className="maindiv" >
-            <img src={props.images}  alt=''/>
-            <p className="heading">{props.nameofimage}</p>
+            <img src={this.props.images}  alt=''/>
+            <p className="heading">{this.props.nameofimage}</p>
           </div>
     )
   }
+}
+

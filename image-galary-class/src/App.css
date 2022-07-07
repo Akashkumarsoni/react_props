@@ -3,8 +3,9 @@ body{
   color: white;
 }
 .App{
+  padding:5%;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
 
