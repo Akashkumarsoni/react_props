@@ -1,13 +1,13 @@
-import { ClassTop } from "./App";
+import React from "react";
 
-export class ClassMid extends ClassTop {
+export class ClassMid extends React.Component {
   
     render() {
       return (
         <div className="App@@">
-          <p>{super.username}</p>
-          <h1>Mid class@@ {super.render()}</h1>
-          <p>{this.props.name2}</p>
+           <p>{this.props.name2}</p>
+          <h1>{this.props.children}</h1>
+        
         </div>
       );
     }
