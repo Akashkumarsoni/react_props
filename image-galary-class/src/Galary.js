@@ -25,7 +25,7 @@ export class Images extends Component {
   render() {
     return (
       <div className="maindiv" >
-            <img src={this.props.images}  alt=''/>
+            <img className='imgs' src={this.props.images}  alt=''/>
             <p className="heading">{this.props.nameofimage}</p>
           </div>
     )
